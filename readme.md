@@ -42,11 +42,15 @@ Solution:
 
 ### Changing the String Concatenation to simple pattern matching parameters in the logger
 e.g.
-   ```LOGGER.info("AppValidationErrDBO.findByApplicationAndValTypeCatName query  : " + query + "For application id : "
-            + applicationId + "Catogory name" + catName);```   
+   ```
+   LOGGER.info("AppValidationErrDBO.findByApplicationAndValTypeCatName query  : " + query + "For application id : "
+            + applicationId + "Catogory name" + catName);
+            ```   
    ->  
-   ```LOGGER.info("AppValidationErrDBO.findByApplicationAndValTypeCatName query  : {} For application id {} : Catogory name {}",
-   query, applicationId, catName);```  
+   ```
+   LOGGER.info("AppValidationErrDBO.findByApplicationAndValTypeCatName query  : {} For application id {} : Catogory name {}",
+   query, applicationId, catName);
+   ```  
 
   Solution:  
   - Run the class `LogMessageConcatenationToPatternMatching` with the root folder as the parameter 
